@@ -56,7 +56,10 @@ def displayTab():
   print(list)
   print(tab)
   return list
-#def nestedTab():
+def nestedTab():
+  print("Enter the index of the tab you want to insert additional tabs to")
+  index=int(input())
+  if index in range(len(list)):
 def insertionSort(list):
   border=1
   while border<len(list):
