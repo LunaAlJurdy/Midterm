@@ -33,14 +33,48 @@ def openTab():
 def closeTab():
   print("Enter the index of the tab you would like to close")
   index=int(input())
-  list.pop(index)
+  if index in range (len(list)):
+    list.pop(index)
+  else:
+    print("Invalid input")
+    list.pop()
   print(list)
-
 def switchTab():
   print("Enter the index of the tab you would like to switch to")
   index=int(input())
-  print("Switching to tab: ",list[index])
+  if index in range(len(list)):
+    print("Switching to tab: ",list[index])
+    print(tab[list[index]])
+  else:
+    print("Invalid input")
+    print("Switching to tab: ",list[-1])
+    print(tab[list[-1]])
   return index
+
+def displayTab():
+  print("The tabs are: ")
+  print(list)
+  print(tab)
+  return list
+#def nestedTab():
+def insertionSort(list):
+  border=1
+  while border<len(list):
+    current=border
+    while current>0 and list[current-1].lower()>list[current].lower():
+      list[current],list[current-1]=list[current-1],list[current]
+      current-=1
+    border+=1
+  print(list)
+list=["Replit","Github","Stack Overflow","W3Schools"]
+insertionSort(list)
+
+def saveTab(): #using https://www.w3schools.com/python/python_json.asp
+  import json
+  tab={"Replit":"https://replit.com/", "Github":"https://github.com/", "Stack Overflow":"https://stackoverflow.com/","W3Schools":"https://www.w3schools.com/"} #dictionary form
+  y=json.dumps(tab) #to convert it
+  print(y)
+  
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
@@ -69,7 +103,7 @@ def mainMenu():
     elif choice==5:
       nestedTab()
     elif choice==6:
-      sortTab()
+      insertionSort(list)
     elif choice==7:
       saveTab()
     elif choice==8:
