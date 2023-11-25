@@ -49,7 +49,11 @@ def switchTab():
     print("Switching to tab: ",list[-1])
     print(tab[list[-1]])
   return index
-
+def displayTab():
+  print("The tabs are: ")
+  print(list)
+  print(tab)
+  return list
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
