@@ -62,10 +62,10 @@ def insertionSort(list): #o(n^2)
   print(list)
 list=["Replit","Github","Stack Overflow","W3Schools"]
 insertionSort(list)
-def saveTab():
+def saveTab(): #using https://www.w3schools.com/python/python_json.asp
   import json
-  tab={"Replit":"https://replit.com/", "Github":"https://github.com/", "Stack Overflow":"https://stackoverflow.com/","W3Schools":"https://www.w3schools.com/"}
-  y=json.dumps(tab) 
+  tab={"Replit":"https://replit.com/", "Github":"https://github.com/", "Stack Overflow":"https://stackoverflow.com/","W3Schools":"https://www.w3schools.com/"} #dictionary form
+  y=json.dumps(tab) #to convert it
   print(y)
   return (y)
 
