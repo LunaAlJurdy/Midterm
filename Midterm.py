@@ -54,6 +54,8 @@ def displayTab():
   print(list)
   print(tab)
   return list
+
+def nestedTab(): 
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
