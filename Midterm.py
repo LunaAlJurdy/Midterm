@@ -82,6 +82,8 @@ def saveTab():
   y=json.dumps(tab) 
   print(y)
   return (y)
+
+def importTab():
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
