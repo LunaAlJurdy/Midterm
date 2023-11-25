@@ -77,7 +77,11 @@ def insertionSort(list):
 list=["Replit","Github","Stack Overflow","W3Schools"]
 insertionSort(list)
 def saveTab():
-  
+  import json
+  tab={"Replit":"https://replit.com/", "Github":"https://github.com/", "Stack Overflow":"https://stackoverflow.com/","W3Schools":"https://www.w3schools.com/"}
+  y=json.dumps(tab) 
+  print(y)
+  return (y)
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
