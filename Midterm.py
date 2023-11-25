@@ -69,7 +69,7 @@ def saveTab(): #using https://www.w3schools.com/python/python_json.asp
   print(y)
   return (y)
 
-def importTab():
+def importTab(): #learned this one using https://www.w3schools.com/python/python_file_write.asp
   with open("tab.json","w") as file:
     file.write("This is my FCS midterm")
   with open("tab.json","r") as file:
