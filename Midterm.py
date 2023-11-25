@@ -44,6 +44,12 @@ def switchTab():
   if index in range(len(list)):
     print("Switching to tab: ",list[index])
     print(tab[list[index]])
+  else:
+    print("Invalid input")
+    print("Switching to tab: ",list[-1])
+    print(tab[list[-1]])
+  return index
+
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
