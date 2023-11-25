@@ -10,7 +10,6 @@ def openTab():
   print("please choose a Title")
   title=str(input())
   for i in range(len(list)):
-
     if title in list:
      print("the title you chose is present: ",title)
 
