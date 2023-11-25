@@ -34,7 +34,10 @@ def closeTab():
   index=int(input())
   if index in range (len(list)):
     list.pop(index)
-
+  else:
+    print("Invalid input")
+    list.pop()
+  print(list)
 def switchTab():
   print("Enter the index of the tab you would like to switch to")
   index=int(input())
