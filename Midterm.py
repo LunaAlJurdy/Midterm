@@ -60,6 +60,10 @@ def nestedTab():
   index=int(input())
   content=input("Enter the content of the new tab: ")
   title=input("Enter the title you would like to add: ")
+  if index in range(len(list)):
+    print(title+tab[list[index]]+content)
+  else:
+    print("Invalid index")
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
