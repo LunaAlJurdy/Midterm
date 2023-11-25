@@ -84,6 +84,10 @@ def saveTab():
   return (y)
 
 def importTab():
+  with open("tab.json","w") as file:
+    file.write("This is my FCS midterm")
+  with open("tab.json","r") as file:
+    print(file.read())
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
