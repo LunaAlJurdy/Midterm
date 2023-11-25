@@ -41,6 +41,7 @@ def displayTab():
   return list
 
 def nestedTab():
+  #watched some youtube videos and kept on trying to solve this problem
   print("Enter the index of the tab you want to insert additional tabs to")
   index=int(input())
   content=input("Enter the content of the new tab: ")
