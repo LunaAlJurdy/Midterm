@@ -41,8 +41,9 @@ def closeTab():
 def switchTab():
   print("Enter the index of the tab you would like to switch to")
   index=int(input())
-  print("Switching to tab: ",list[index])
-  return index
+  if index in range(len(list)):
+    print("Switching to tab: ",list[index])
+    print(tab[list[index]])
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
