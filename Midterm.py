@@ -65,10 +65,17 @@ def nestedTab():
   else:
     print("Invalid index")
 
-def insertionSort(list): #o(n^2)
+def insertionSort(list): 
   border=1
-  while border<len(list): #o(n)
+  while border<len(list): 
     current=border
+        while current>0 and list[current-1].lower()>list[current].lower(): 
+      list[current],list[current-1]=list[current-1],list[current]
+      current-=1
+    border+=1
+  print(list)
+list=["Replit","Github","Stack Overflow","W3Schools"]
+insertionSort(list)
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
