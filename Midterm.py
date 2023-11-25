@@ -55,7 +55,11 @@ def displayTab():
   print(tab)
   return list
 
-def nestedTab(): 
+def nestedTab():
+  print("Enter the index of the tab you want to insert additional tabs to")
+  index=int(input())
+  content=input("Enter the content of the new tab: ")
+  title=input("Enter the title you would like to add: ")
 def mainMenu():
   choice=-99 # dummy value
   while choice !=9:
