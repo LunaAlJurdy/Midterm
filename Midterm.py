@@ -1,15 +1,7 @@
-list=["Replit","Github","Stack Overflow","W3Schools"]
-tab={}
-tab["Replit"]="https://replit.com/"
-tab["Github"]="https://github.com/"
-tab["Stack Overflow"]="https://stackoverflow.com/"
-tab["W3Schools"]="https://www.w3schools.com/"
-print(tab)
-print(list)
-def openTab():
+def openTab():#o(n+n)=o(n), n being the length of the list
   print("please choose a Title")
   title=str(input())
-  for i in range(len(list)):
+  for i in range(len(list)):#o(n)
     if title in list:
      print("the title you chose is present: ",title)
 
@@ -18,16 +10,9 @@ def openTab():
   print("please choose a link")
   link=str(input())
   
-  for i in range(len(tab)):
+  for i in range(len(tab)):#o(n)
     if link in tab:
       print("the link you chose is present: ",link)
-
-    else:
-      print("the link you chose is added: ",link)
-  
-      list.append(title)
-    
-      return title
 
 def closeTab():
   print("Enter the index of the tab you would like to close")
